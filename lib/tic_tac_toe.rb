@@ -87,7 +87,7 @@ class TicTacToe
   def play
 
     if won?
-      puts "lol"
+      puts "Congratulations #{winner}"
     elsif draw?
       puts "Cat's Game!"
     end
