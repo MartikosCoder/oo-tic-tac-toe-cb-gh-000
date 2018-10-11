@@ -89,6 +89,10 @@ class TicTacToe
       turn
     end
 
-    
+    if won?
+      puts "lol"
+    elsif draw?
+      puts "Cat's Game!"
+    end
   end
 end
