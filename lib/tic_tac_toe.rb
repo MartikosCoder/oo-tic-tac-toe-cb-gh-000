@@ -79,4 +79,12 @@ class TicTacToe
   def over?
     return won? || full?
   end
+
+  def winner
+    if won?
+      return board[won?[0]]
+    end
+
+    return nil
+  end
 end
