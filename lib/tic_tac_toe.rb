@@ -45,4 +45,15 @@ class TicTacToe
   def current_player
     return turn_count % 2 == 0 ? "X" : "O"
   end
+
+  def turn
+    input = gets
+    input = input_to_index(input)
+
+    if valid_move(input)
+      move(input, current_player)
+    else
+      turn
+    end
+  end
 end
