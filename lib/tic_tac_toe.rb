@@ -78,4 +78,5 @@ class TicTacToe
 
   def over?
     return won? || full?
+  end
 end
