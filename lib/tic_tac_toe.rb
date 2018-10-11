@@ -87,6 +87,11 @@ class TicTacToe
   def play
     until over?
       turn
+
+      if draw?
+        puts "Cat's Game!"
+        break
+      end
     end
 
     if won?
