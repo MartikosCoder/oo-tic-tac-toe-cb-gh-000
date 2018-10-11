@@ -37,4 +37,7 @@ class TicTacToe
   def valid_move?(index)
     return (index > -1 && index < 9) && @board[index] == " "
   end
+
+  def turn_count()
+    return @board.count {|e| e != " "}
 end
