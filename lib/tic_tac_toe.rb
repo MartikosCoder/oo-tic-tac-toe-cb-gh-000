@@ -39,6 +39,6 @@ class TicTacToe
       return !position_taken(index)
     end
 
-    return !position_taken(index)
+    return (index > -1 && index < 9) && !position_taken(index)
   end
 end
