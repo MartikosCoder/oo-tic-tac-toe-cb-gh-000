@@ -38,7 +38,10 @@ class TicTacToe
     return (index > -1 && index < 9) && @board[index] == " "
   end
 
-  def turn_count()
+  def turn_count
     return @board.count {|e| e != " "}
   end
+
+  def current_player
+    return turn_count % 2 == 0 ? "X" : "O"
 end
